@@ -6,7 +6,11 @@ int p[];
 int s[];
 
 void build(int n) {
-  iota(p, p + n, 0); // like a for :)
+  // iota(p, p + n, 0); // like a for :)
+  for (int i = 0; i < n; i++) {
+    p[i] = i;
+    s[i] = 1;
+  }
 }
 
 int Find(int i) {
